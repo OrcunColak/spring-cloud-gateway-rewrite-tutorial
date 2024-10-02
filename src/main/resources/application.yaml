@@ -10,3 +10,4 @@ spring:
             - RewritePath=/orders/(?<segment>.*), /api/orders/${segment}
             - AddRequestParameter=foo, bar
             - RemoveRequestHeader=X-Remove-Header
+            - Retry=5
