@@ -9,5 +9,6 @@ spring:
           filters:
             - RewritePath=/orders/(?<segment>.*), /api/orders/${segment}
             - AddRequestParameter=foo, bar
+            - AddRequestHeader=X-Request-Foo, Bar
             - RemoveRequestHeader=X-Remove-Header
             - Retry=5
